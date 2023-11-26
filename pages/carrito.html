@@ -3,7 +3,8 @@
 <head>
   <title>TecnoBazar</title>
   <link rel="stylesheet" href="../style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10"> 
 </head>
 <body>
 
@@ -68,14 +69,30 @@
             </tr>
         </thead>
         <tbody  id="cartBody">
-            <!-- Aquí se agregarán las filas dinámicamente con JavaScript -->
+            
         </tbody>
     </table>
+    <button id="vaciarCarritoBtn">Vaciar Carrito</button>
+    <button id="confirmarCompraBtn">Confirmar compra</button>
+
+    
     </div>
     
+    <footer>
+      <section class="footer">
+          <div class="iconos">
+              <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr"><i class='bx bxl-facebook-circle' ></i></a>
+              <a href="https://www.whatsapp.com/?lang=es_LA"><i class='bx bxl-whatsapp'></i></i></a>
+              <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+              <a href="https://github.com/"><i class='bx bxl-github'></i></i></a>
+          </div>
+          
+      </section>
+  </footer>
   
   </section>
-  <script type="module" src="../scripts/carrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script type="module" src="../scripts/carrito.js"></script>
 <script type="module" src="../scripts/card.js"></script>
 <script  src="../scripts/script.js"></script>
 </body>

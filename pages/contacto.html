@@ -59,7 +59,7 @@
   <section class="home-section">
    
     
-    <h2>Formulario de Contacto</h2>
+    <h2 class="title-form">Formulario de Contacto</h2>
     <form id="contactForm">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required minlength="3">
@@ -72,9 +72,19 @@
 
         <div class="error-message" id="errorMessage"></div>
 
-        <button type="button" onclick="validateForm()">Enviar Mensaje</button>
+        <button class="submite-button" type="button" onclick="validateForm()">Enviar Mensaje</button>
     </form>
-
+    <footer>
+        <section class="footer">
+            <div class="iconos">
+                <a href="https://web.facebook.com/"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://www.whatsapp.com/"><i class='bx bxl-whatsapp'></i></i></a>
+                <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/"><i class='bx bxl-github'></i></i></a>
+            </div>
+            
+        </section>
+    </footer>
   </section>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script  src="../scripts/script.js"></script>

@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener el cuerpo de la tabla
     var cartBody = document.getElementById('cartBody');
+    var vaciarCarritoBtn = document.getElementById('vaciarCarritoBtn');
+    var confirmarCompraBtn = document.getElementById('confirmarCompraBtn');
+
+    actualizarCarritoYTabla();
+
+    vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+    confirmarCompraBtn.addEventListener('click', confirmarCompra);
+
 
     // Utilizar forEach para agregar filas a la tabla
     actualizarCarritoYTabla();
@@ -56,6 +64,30 @@ document.addEventListener('DOMContentLoaded', function () {
             await actualizarCarritoYTabla();
         }
     }
+    function vaciarCarrito() {
+        // Eliminar todos los productos del carrito en el localStorage
+        localStorage.removeItem('cart');
+
+        // Actualizar el carrito y la tabla después de vaciar
+        actualizarCarritoYTabla();
+    }
+
+    function confirmarCompra() {
+        // Eliminar todos los productos del carrito en el localStorage
+        localStorage.removeItem('cart');
+
+        actualizarCarritoYTabla();
+
+        // Mostrar una alerta con SweetAlert confirmando la compra
+        Swal.fire({
+            icon: 'success',
+            title: 'Compra confirmada',
+            text: 'Gracias por tu compra. Los productos han sido eliminados del carrito.',
+            showConfirmButton: false,
+            timer: 2000,
+        });
+    }
+
 
     // Función para actualizar el carrito y la tabla
     function actualizarCarritoYTabla() {
@@ -70,4 +102,8 @@ document.addEventListener('DOMContentLoaded', function () {
             addProductToTable(product);
         });
     }
+    
 });
+
+
+

@@ -390,7 +390,48 @@ button:hover {
   background-color: #45a049;
 }
 
+.title-form{
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 3rem;
+}
+
 .error-message {
   color: red;
   margin-bottom: 10px;
+}
+
+
+
+.eliminar-btn{
+  background-color: red;
+}
+
+.eliminar-btn:hover{
+  background-color: red;
+}
+
+.footer{
+  height: 100px   ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  
+  
+  
+}
+
+.iconos a{
+  color:var(--text-color);
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  
+}
+
+
+.iconos img{
+  width: 100%;
+
 }
