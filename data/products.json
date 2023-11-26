@@ -1,7 +1,6 @@
 	
 [
-
-    {
+  {
       "id": 9,
       "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0",
       "price": 64,
@@ -11,8 +10,8 @@
       "rating": null,
       "sale": 0,
       "count": 203
-    },
-    {
+  },
+  {
       "id": 10,
       "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
       "price": 109,
@@ -22,8 +21,8 @@
       "rating": null,
       "sale": 45,
       "count": 470
-    },
-    {
+  },
+  {
       "id": 11,
       "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
       "price": 109,
@@ -33,8 +32,8 @@
       "rating": null,
       "sale": 0,
       "count": 319
-    },
-    {
+  },
+  {
       "id": 12,
       "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
       "price": 114,
@@ -44,8 +43,8 @@
       "rating": null,
       "sale": 31,
       "count": 400
-    },
-    {
+  },
+  {
       "id": 13,
       "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
       "price": 599,
@@ -55,8 +54,8 @@
       "rating": null,
       "sale": 0,
       "count": 250
-    },
-    {
+  },
+  {
       "id": 14,
       "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED",
       "price": 999.99,
@@ -66,6 +65,40 @@
       "rating": null,
       "sale": 38,
       "count": 140
-    }
-  ]
+  },
+  {
+      "id": 15,
+      "title": "Logitech G Pro X Mechanical Gaming Keyboard",
+      "price": 149.99,
+      "description": "Tenkeyless compact mechanical gaming keyboard with customizable RGB backlighting, GX Blue Clicky key switches, detachable cable, and LIGHTSYNC technology.",
+      "category": "electronics",
+      "image": "../img JSON/shopping.webp",
+      "rating": null,
+      "sale": 20,
+      "count": 120
+  },
+  {
+      "id": 16,
+      "title": "Razer DeathAdder Elite Gaming Mouse",
+      "price": 69.99,
+      "description": "High-precision 16,000 DPI optical sensor, customizable Chroma RGB lighting, 7 programmable buttons, and mechanical mouse switches.",
+      "category": "electronics",
+      "image": "../img JSON/razer.webp",
+      "rating": null,
+      "sale": 15,
+      "count": 180
+  },
+  {
+      "id": 17,
+      "title": "SteelSeries Arctis 7 Wireless Gaming Headset",
+      "price": 149.99,
+      "description": "Lossless 2.4 GHz wireless audio, DTS Headphone:X v2.0 surround sound, ClearCast noise canceling microphone, and Ski Goggle suspension headband for lasting comfort.",
+      "category": "electronics",
+      "image": "../img JSON/auris.webp",
+      "rating": null,
+      "sale": 25,
+      "count": 90
+  }
+]
+
   

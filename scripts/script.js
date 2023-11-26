@@ -44,10 +44,9 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', 'light');
   }
 
-  // Almacenar información adicional como JSON en el localStorage
+  
   const additionalData = {
     theme: localStorage.getItem('theme'),
-    // Agrega más datos aquí según sea necesario
   };
 
   localStorage.setItem('additionalData', JSON.stringify(additionalData));
@@ -60,24 +59,54 @@ if (savedAdditionalData) {
   
 }
 
+function validateForm() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
 
-let card = document.getElementById(`card`);
-// tarjetas home section
-products.map((object) =>{
-  card.innerHTML += `
-  <div class="col">
-    <div class="card">
-      <img src="${object.image}" class="card-img-top" alt="${object.title}">
-      <div class="card-body">
-        <h5 class="card-title">${object.title}</h5>
-        <p class="card-text">${object.description}</p>
-        <p class="card-text">${object.price}
-        <button class="btn btn-primary" onclick="agregarAlCarrito(${JSON.stringify(object)})">Agregar al carrito</button>
-      </div>
-    </div>
-  </div>
-  `
-})
+  // Validar nombre
+  if (name.length < 3) {
+      showError('Nombre debe tener al menos 3 caracteres.');
+      return;
+  }
 
+  // Validar correo electrónico
+  if (!validateEmail(email)) {
+      showError('Correo electrónico no válido.');
+      return;
+  }
+
+  // Validar mensaje
+  if (message.length === 0) {
+      showError('Mensaje no puede estar vacío.');
+      return;
+  }
+
+  // Si no hay errores, mostrar SweetAlert2
+  showSuccess();
+}
+
+function showError(errorMessage) {
+  Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: errorMessage,
+  });
+}
+
+function showSuccess() {
+  Swal.fire({
+      icon: 'success',
+      title: 'Éxito',
+      text: 'Formulario enviado correctamente',
+  });
+  // Aquí puedes enviar el formulario, por ejemplo, usando AJAX
+  // document.getElementById('contactForm').submit();
+}
+
+function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
 
 

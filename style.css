@@ -294,8 +294,11 @@ input:checked + .slider:before {
 
 .products-container{
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem ;
-  padding-left: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem;
   max-width: 95%;
 }
 
@@ -320,6 +323,7 @@ input:checked + .slider:before {
 .product-card div{
   font-size: 1rem;
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
 }
@@ -341,8 +345,52 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-.products-container-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Espaciado opcional desde la parte superior */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
 }

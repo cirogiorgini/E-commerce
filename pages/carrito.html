@@ -4,7 +4,6 @@
   <title>TecnoBazar</title>
   <link rel="stylesheet" href="../style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 </head>
 <body>
 
@@ -57,14 +56,27 @@
     </ul>
   </div>
   <section class="home-section">
-    <div id="products-container" class="products-container">
 
+    <div id="cart-section">
+      <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Oferta</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody  id="cartBody">
+            <!-- Aquí se agregarán las filas dinámicamente con JavaScript -->
+        </tbody>
+    </table>
     </div>
+    
   
-
   </section>
+  <script type="module" src="../scripts/carrito.js"></script>
 <script type="module" src="../scripts/card.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script  src="../scripts/script.js"></script>
 </body>
 </html>
